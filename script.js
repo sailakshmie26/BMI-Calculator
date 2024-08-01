@@ -55,21 +55,14 @@ document.querySelector("#result").innerHTML = bmi.toFixed(2);
 
 }
 
-function clearFields(){
- document.getElementById("age").value = "";
- document.getElementById("height").value = "";
- document.getElementById("weight").value = "";
- document.getElementById("m").value = "";
- document.getElementById("f").value = "";
- document.querySelector(".comment").value = "";
- document.getElementById("form").value = "";
- document.getElementsByClassName("result").value = "";  
-}
-
-function reset(){
- var radio = document.getElementsByClassName('gender');
- radio.checked = false;
-
+function clearFields() {
+  document.getElementById("age").value = "";
+  document.getElementById("height").value = "";
+  document.getElementById("weight").value = "";
+  document.getElementById("m").checked = false; 
+  document.getElementById("f").checked = false;
+  document.querySelector(".comment").innerHTML = "";
+  document.querySelector("#result").innerHTML = "00.00";
 }
 
 span.onclick = function(){
